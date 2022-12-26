@@ -2,13 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Github</title>
-    <link rel="stylesheet" href="style.css"/>
+    <title>Weather App</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
   <body>
-    <h1>Hello!Github</h1>
-    <li> 1 step)</li>
-    <script src="script.js"></script>
+    <div class="container">
+      <div class="app" id="form-serch" >
+        <form>
+          <input type="search" id="input-city" placeholder="Type a city:)" class="form-control"/>
+          <input type="submit" value="Search" class="form-control"/>
+				</form >
+        <h1 id="city">Montreal</h1>
+        <span id="info-day"> </span>
+        <ul>
+          <li>Snowing</li>
+        </ul>
+        <div class="row">
+          <div classs="col-7" id="form-serch">
+            <img src="snow.png" /> <span class="temperature1" id="temperature">-8°</span>
+            <a
+              href="https://www.google.com/search?q=montreal+weather&sxsrf=ALiCzsaY9ufqR3alSzk1eZtDybN4uMJQyw%3A1670409402666&ei=umyQY6SeKI3xrgTIooLgAw&ved=0ahUKEwik48z4p-f7AhWNuIsKHUiRADwQ4dUDCA8&uact=5&oq=montreal+weather&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIMCCMQJxCdAhBGEIACMgYIABAHEB4yCAgAEIAEEMsBMgUIABCABDIICAAQgAQQywEyBQgAEIAEMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMggIABCABBDLAToKCAAQRxDWBBCwAzoHCAAQsAMQQzoHCAAQgAQQDToGCAAQHhANOg8IIxCwAhAnEJ0CEEYQgAI6CAgAEAcQHhATOgkIABCABBANEBM6BwgjECcQnQI6BAgjECc6CwgAEIAEELEDEIMBOgoIIxCwAhAnEJ0COgcIIxCwAhAnOg0IABCABBCxAxCDARANOhYILhCABBCxAxCDARDHARDRAxDUAhANOgoILhCABBCxAxANOg0ILhCABBCxAxCDARANOg0ILhCABBDHARCvARANSgQIQRgASgQIRhgAUJoHWKImYOsnaAFwAHgCgAHCA4gB6BGSAQoxMy4zLjAuMS4xmAEAoAEByAEJwAEB&sclient=gws-wiz-serp"
+						>
+						<span class="unit">
+              <a href=""  id="celsius">C°</a>
+							<a href="" id="fahrenheit">|F°</a>
+            </span>
+          </div>
+          <div classs="col-7">
+            <ul>
+              <li>Humidity: 98%</li>
+              <li>Wind: 6 km/h</li>
+              <li>Pressure: 1020.0 mb</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js">
+    </script>
   </body>
 </html>
+
